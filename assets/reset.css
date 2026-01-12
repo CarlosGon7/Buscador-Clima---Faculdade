@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    line-height: 1.2;
+    transition: linear all 0.2s ease-in-out;
+}
+
+input:focus, input:valid{
+    outline: none;
+}
+
+button{
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}

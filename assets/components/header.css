@@ -1,0 +1,71 @@
+.header {
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    padding: 1rem 2rem;
+}
+
+.form {
+    width: 80%;
+    max-width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+h2 {
+    color: var(--cor-logo);
+    font-size: 20px;
+    font-weight: 600;
+    user-select: none;
+}
+
+.title-header {
+    background: linear-gradient(90deg, #ff8a33 0%, #ff6a00 50%, #ff4f00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+input[type="text"] {
+    background-color: #48319D;
+    min-width: 50%;
+    height: clamp(30px,35px, 50px);
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+input::placeholder {
+    padding: 20px 20px 20px 30px;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.btn-pesquisa {
+    /* Medidas usando clamp para tamanhos de tela diferente */
+    font-size: clamp(10px, 16px, 18px);
+    padding: clamp(8px, 10px, 12px) clamp(10px, 16px, 18px);
+    border-radius: clamp(6px, 25px, 35px);
+    width: 170px;
+    background: linear-gradient(135deg, #F5F5F9 0%, #DADFE7 100%);
+    box-shadow: inset 2px 2px 1px #FFF,
+        inset -2px -2px 1px #bbbfc7,
+        3px 2px 10px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-wrap: nowrap;
+    font-weight: 600;
+    color: #000;
+}
+
+input:focus,
+input:valid {
+    padding-left: 30px;
+    color: #FFF;
+    border: rgba(0, 0, 0, 0.3);
+}
