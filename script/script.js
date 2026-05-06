@@ -304,7 +304,7 @@ form.addEventListener("submit", (event) => {
                         box.querySelector(".dia").textContent = nomeDia;
                         box.querySelector(".graus").textContent =
                             `${Math.round(tempMax)}° / ${Math.round(tempMin)}°`;
-                        box.querySelector("#img").textContent = `${icone}`;
+                        box.querySelector(".img").textContent = `${icone}`;
                     }
 
 
